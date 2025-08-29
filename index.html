@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Service</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+  <style>
+    .navbar .btn.bg-green-600 {
+      background-color: #16a34a; 
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%; /* Ensure card takes full height */
+    }
+    .card-content {
+      flex: 1; /* Allow content to grow and push buttons to bottom */
+      display: flex;
+      flex-direction: column;
+    }
+    .card-buttons {
+      margin-top: auto; /* Push buttons to the bottom */
+    }
+  </style>
+</head>
+<body class="max-auto bg-gray-50">
+  <!-- Navbar -->
+  <div class="w-full max-w-[1920px] mx-auto navbar bg-white text-green-700 px-6 shadow flex flex-col sm:flex-row sm:items-center">
+    <!-- Left -->
+    <div class="flex flex-col sm:flex-row items-center gap-2">
+      <img src="./assets/logo.png" alt="" class="w-16 h-16 object-contain">
+      <span class="font-bold text-4xl text-center sm:text-left">Emergency <br>Service</span>
+    </div>
+    <!-- Right -->
+    <div class="mt-4 sm:mt-0 sm:ml-auto flex flex-col sm:flex-row gap-2 items-center">
+      <button id="heart-count-btn" class="btn rounded-xl w-24 bg-green-50 text-lg border border-green-200 flex justify-center items-center gap-1">
+        <span id="heart-count">0</span>
+        <img src="./assets/heart.png" alt="" class="h-5 w-5 object-contain">
+      </button>
+      <button id="coin-count-btn" class="btn rounded-xl w-24 bg-green-50 text-lg border border-green-200 flex justify-center items-center gap-1">
+        <span id="coin-count">100</span>
+        <img src="./assets/coin.png" alt="" class="h-5 w-5 object-contain">
+      </button>
+      <button id="navbar-copy-btn" class="btn bg-green-600 hover:bg-green-700 text-white rounded-full px-5">Copy</button>
+    </div>
+  </div>
+</body>
+</html>
